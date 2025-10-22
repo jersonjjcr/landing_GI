@@ -8,6 +8,8 @@ function App() {
     mensaje: ''
   });
 
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   const handleInputChange = (e) => {
     setFormData({
       ...formData,
@@ -26,10 +28,22 @@ function App() {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
+    // Cerrar el menú móvil después de hacer clic
+    setIsMenuOpen(false);
+  };
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
   };
 
   return (
     <div className="App">
+      {/* Overlay para cerrar menú móvil */}
+      <div 
+        className={`menu-overlay ${isMenuOpen ? 'active' : ''}`} 
+        onClick={() => setIsMenuOpen(false)}
+      ></div>
+
       {/* Header / Navegación */}
       <header className="header">
         <div className="nav-container">
@@ -37,7 +51,21 @@ function App() {
             <h2>GIIT</h2>
             <span>Grupo de Investigación en Innovación y Tecnología</span>
           </div>
-          <nav className="nav-menu">
+          
+          {/* Botón hamburguesa */}
+          <button className="hamburger" onClick={toggleMenu} aria-label="Toggle menu">
+            <span className={`hamburger-line ${isMenuOpen ? 'open' : ''}`}></span>
+            <span className={`hamburger-line ${isMenuOpen ? 'open' : ''}`}></span>
+            <span className={`hamburger-line ${isMenuOpen ? 'open' : ''}`}></span>
+          </button>
+
+          <nav className={`nav-menu ${isMenuOpen ? 'nav-menu-open' : ''}`}>
+            <div className="mobile-menu-header">
+              <h3>Menú</h3>
+              <button className="close-menu" onClick={() => setIsMenuOpen(false)} aria-label="Cerrar menú">
+                ✕
+              </button>
+            </div>
             <ul>
               <li><a href="#inicio" onClick={() => scrollToSection('inicio')}>Inicio</a></li>
               <li><a href="#sobre-nosotros" onClick={() => scrollToSection('sobre-nosotros')}>Sobre Nosotros</a></li>
