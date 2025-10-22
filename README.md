@@ -1,11 +1,114 @@
-# React + TypeScript + Vite
+# 🧠 GIIT - Grupo de Investigación en Innovación y Tecnología
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📋 Descripción
 
-Currently, two official plugins are available:
+Landing page profesional y responsive para el **Grupo de Investigación en Innovación y Tecnología (GIIT)**, desarrollada con **React + Vite** y **CSS puro**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Características
+
+- 🎨 **Diseño moderno y profesional**
+- 📱 **Completamente responsive** (móvil, tablet, desktop)
+- ⚡ **Rendimiento optimizado** con Vite
+- 🎯 **Single Page Application (SPA)**
+- 💎 **CSS puro** sin frameworks externos
+- 🖼️ **Imágenes reales** del grupo de investigación
+
+## 🏗️ Estructura del Proyecto
+
+```
+src/
+├── App.jsx          # Componente principal con todas las secciones
+├── App.css          # Estilos completos y responsive
+├── main.jsx         # Punto de entrada
+└── assets/          # Recursos estáticos
+```
+
+## 📄 Secciones Incluidas
+
+1. **🏠 Inicio** - Hero section con presentación principal
+2. **👥 Sobre Nosotros** - Historia, misión y visión del grupo
+3. **🔬 Líneas de Investigación** - 5 áreas de investigación principales
+4. **📊 Proyectos** - Portafolio de proyectos en curso y finalizados
+5. **📚 Publicaciones** - Lista de artículos y trabajos académicos
+6. **👨‍🔬 Integrantes** - Perfiles del equipo de investigadores
+7. **📞 Contacto** - Formulario de contacto e información
+
+## 🚀 Instalación y Uso
+
+### Prerrequisitos
+- Node.js (v16 o superior)
+- npm o yarn
+
+### Instalación
+```bash
+# Clonar el repositorio
+git clone https://github.com/jersonjjcr/landing_GI.git
+cd landing_GI
+
+# Instalar dependencias
+npm install
+
+# Ejecutar en modo desarrollo
+npm run dev
+
+# Construir para producción
+npm run build
+```
+
+## 🎨 Tecnologías Utilizadas
+
+- **React 19.1.1** - Biblioteca de UI
+- **Vite 7.1.7** - Build tool y dev server
+- **CSS3** - Estilos puros con Flexbox y Grid
+- **Google Fonts** - Tipografía Poppins
+- **ESLint** - Linting y calidad de código
+
+## 📱 Responsive Design
+
+El sitio está optimizado para:
+- 📱 **Móviles** (320px - 480px)
+- 📱 **Tablets** (481px - 768px)
+- 💻 **Desktop** (769px+)
+
+## 🎯 Características Técnicas
+
+- ✅ Navegación suave entre secciones
+- ✅ Efectos hover y transiciones CSS
+- ✅ Formulario de contacto funcional (UI)
+- ✅ Imágenes optimizadas y responsive
+- ✅ SEO-friendly structure
+- ✅ Accesibilidad mejorada
+
+## 👨‍💻 Desarrollo
+
+### Estructura de Archivos Clave
+- `App.jsx` - Componente principal con toda la funcionalidad
+- `App.css` - Estilos completos con media queries
+- `public/` - Imágenes y assets estáticos
+
+### Scripts Disponibles
+```bash
+npm run dev      # Servidor de desarrollo
+npm run build    # Build de producción
+npm run preview  # Preview del build
+npm run lint     # Ejecutar ESLint
+```
+
+## 🌐 Demo
+
+Visita la página en: [http://localhost:5174](http://localhost:5174) (en desarrollo)
+
+## 📄 Licencia
+
+Este proyecto está bajo la licencia MIT.
+
+## 👥 Autor
+
+Desarrollado para el Grupo de Investigación en Innovación y Tecnología (GIIT)
+
+---
+
+⭐ **¡Si te gusta este proyecto, dale una estrella en GitHub!** ⭐
 
 ## React Compiler
 
